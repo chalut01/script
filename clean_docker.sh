@@ -4,6 +4,7 @@
 docker container stop $(docker container ls -aq)
 docker container rm $(docker container ls -aq)
 
+docker container prune
 docker system prune
 docker system prune --volumes
-docker container prune
+docker image prune -a
